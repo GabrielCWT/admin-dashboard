@@ -1,12 +1,13 @@
 :root {
   font-family: "Roboto", sans-serif;
   --clr-primary-400: rgb(156, 156, 156);
-  --clr-primary-500: rgb(143, 143, 143);
+  --clr-primary-500: rgb(207, 219, 215);
   --clr-primary-600: rgb(0, 0, 0);
 
   --clr-alt-100: ;
   --clr-alt-700: ;
 
+  --clr-light: rgb(255, 255, 255);
   --clr-dark: ;
 
   --fw-semi-bold: 500;
@@ -16,9 +17,15 @@
   --fs-300: 0.6rem;
   --fs-400: 0.75rem;
   --fs-500: 1rem;
-  --fs-600: 1.2rem;
-  --fs-700: 1.3rem;
+  --fs-600: 1.3rem;
+  --fs-700: 1.5rem;
   --fs-800: 2rem;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
 *,
@@ -36,14 +43,27 @@ a {
   text-decoration: none;
 }
 
-img.alt-clr {
-  display: inline;
+svg {
+  height: 1.5rem;
 }
 
 .site-layout {
+  height: 100%;
   display: grid;
-  grid-template-rows: 20% 80%;
-  grid-template-columns: 20% 70%;
+  grid-template-rows: 15% auto;
+  grid-template-columns: min(20%, 400px) auto;
+}
+
+.alt-clr {
+  background-color: rgb(28, 207, 148);
+  fill: white;
+}
+.alt-clr * {
+  color: var(--clr-light);
+}
+
+.gray-clr {
+  background-color: var(--clr-primary-500);
 }
 
 .content,
@@ -70,7 +90,7 @@ img.alt-clr {
 }
 
 .page-button {
-  font-size: var(--fs-700);
+  font-size: var(--fs-600);
 }
 
 .page-button > a {
@@ -79,11 +99,63 @@ img.alt-clr {
   gap: 1.2rem;
   align-items: center;
   font-weight: var(--fw-bold);
-  color: black;
 }
 
 .header {
   padding: 1rem 2.25rem;
+  display: grid;
+  grid-template-rows: 4rem 7rem;
+  font-weight: var(--fw-semi-bold);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+}
+
+#search-container {
+  display: flex;
+  gap: 1.2rem;
+  flex: 1 1 180px;
+  align-items: center;
+}
+
+#search {
+  border-radius: 20px;
+  padding: 0.5rem;
+  width: min(600px, 100%);
+}
+
+#profile-container {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.user-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.user-button {
+  width: 100px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: var(--fs-700);
+  font-weight: var(--fw-bold);
 }
 
 img {

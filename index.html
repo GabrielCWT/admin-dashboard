@@ -12,81 +12,84 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap"
       rel="stylesheet"
     />
+    <script type="text/javascript" src="svg-loader.min.js" async></script>
   </head>
   <body>
     <div class="site-layout">
-      <div class="sidebar">
+      <div class="sidebar alt-clr">
         <div class="logo"><a href="#">Dashboard</a></div>
         <div class="button-container">
-          <div class="page-button alt-clr"><a href="#"><img src="images/home.svg" alt="home-icon" class="alt-clr"> Home</a></div>
-          <div class="page-button alt-clr"><a href="#"><img src="images/card-account-details-outline.svg" alt="profile-icon" class="alt-clr">Profile</a></div>
-          <div class="page-button alt-clr"><a href="#"><img src="images/message-reply.svg" alt="messages-icon" class="alt-clr">Messages</a></div>
-          <div class="page-button alt-clr"><a href="#"><img src="images/clock-time-three.svg" alt="history-icon" class="alt-clr">History</a></div>
-          <div class="page-button alt-clr"><a href="#"><img src="images/note-multiple-outline.svg" alt="tasks-icon" class="alt-clr">Tasks</a></div>
-          <div class="page-button alt-clr"><a href="#"><img src="images/account-group.svg" alt="communities-icon" class="alt-clr">Communities</a></div>
+          <div class="page-button alt-clr"><a href="#"><svg data-src="images/home.svg" class="alt-clr"></svg> Home</a></div>
+          <div class="page-button alt-clr"><a href="#"><svg data-src="images/profile-icon.svg" class="alt-clr"></svg>Profile</a></div>
+          <div class="page-button alt-clr"><a href="#"><svg data-src="images/message-icon.svg" class="alt-clr"></svg>Messages</a></div>
+          <div class="page-button alt-clr"><a href="#"><svg data-src="images/history-icon.svg" class="alt-clr"></svg>History</a></div>
+          <div class="page-button alt-clr"><a href="#"><svg data-src="images/tasks-icon.svg" class="alt-clr"></svg>Tasks</a></div>
+          <div class="page-button alt-clr"><a href="#"><svg data-src="images/communities-icon.svg" class="alt-clr"></svg>Communities</a></div>
         </div>
         <div class="button-container">
-          <div class="page-button alt-clr"><a href="#"><img src="images/cog.svg" alt="settings-icon" class="alt-clr">Settings</a></div>
-          <div class="page-button alt-clr"><a href="#"><img src="images/help-box.svg" alt="support-icon" class="alt-clr">Support</a></div>
-          <div class="page-button alt-clr"><a href="#"><img src="images/shield-check.svg" alt="privacy-icon" class="alt-clr">Privacy</a></div>
+          <div class="page-button alt-clr"><a href="#"><svg data-src="images/settings-icon.svg" class="alt-clr"></svg>Settings</a></div>
+          <div class="page-button alt-clr"><a href="#"><svg data-src="images/support-icon.svg" class="alt-clr"></svg>Support</a></div>
+          <div class="page-button alt-clr"><a href="#"><svg data-src="images/security-icon.svg" class="alt-clr"></svg>Privacy</a></div>
         </div>
       </div>
       <div class="header">
         <div class="nav">
-          <div class="search-container">
-            <img src="images/magnify.svg" alt="search-icon" />
+          <div id="search-container">
+            <svg data-src="images/search-icon.svg"></svg>
             <input type="search" name="search" id="search"></input>
           </div>
-          <div class="profile">
-            <a href="#"><img src="images/bell-ring-outline.svg" alt="notifications" /></a>
+          <div id="profile-container">
+            <a href="#"><svg data-src="images/notifications-icon.svg"></svg></a>
             <a href="#"><img src="images/profilepic1.jpg" alt="profile-picture" />Gabriel Chang</a>
           </div>
         </div>
         <div class="user-bar">
           <div><img src="images/profilepic1.jpg" alt="profile-picture"><p>Hi there,</p><h1>Gabriel Chang (@gabriel)</h1></div>
-          <div class="alt-clr"><a href="#">New</a></div>
-          <div class="alt-clr"><a href="#">Upload</a></div>
-          <div class="alt-clr"><a href="#">Share</a></div>
+          <div class="container">
+            <div class="alt-clr user-button"><a href="#">New</a></div>
+            <div class="alt-clr user-button"><a href="#">Upload</a></div>
+            <div class="alt-clr user-button"><a href="#">Share</a></div>
+          </div>
         </div>
       </div>
-      <div class="content">
+      <div class="content gray-clr">
         <div class="project container"><div>
           <header>Your Projects</header>
           <article>
             <header></header>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error eos aliquam provident maxime cupiditate minus totam similique itaque quidem in tempora qui harum quo, dolorum veritatis? Atque eum consequuntur reprehenderit.</p>
           </article>
-          <img src="images/star-check.svg" alt="favourite-icon"><img src="imgaes/eye-check.svg" alt="bookmark-icon"><img src="images/source-fork.svg" alt="share-icon"></div>
+          <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg></div>
         <div>
           <article>
             <header></header>
             <p>Amet repellat earum non eaque, maxime veritatis magnam aspernatur perspiciatis suscipit ratione ex! Laborum cumque inventore tempore porro. Placeat, asperiores eaque vero esse deserunt facere distinctio dolor reprehenderit amet consequuntur.</p>
           </article>
-          <img src="images/star-check.svg" alt="favourite-icon"><img src="imgaes/eye-check.svg" alt="bookmark-icon"><img src="images/source-fork.svg" alt="share-icon"></div>
+          <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg></div>
         <div>
           <article>
             <header></header>
             <p>Tempora, dolorum dignissimos? Quasi facilis a quis porro voluptas optio suscipit explicabo corporis, eius labore earum magnam quibusdam asperiores dolore soluta maxime sapiente corrupti mollitia. Laborum, temporibus cum. Excepturi, optio!</p>
           </article>
-          <img src="images/star-check.svg" alt="favourite-icon"><img src="imgaes/eye-check.svg" alt="bookmark-icon"><img src="images/source-fork.svg" alt="share-icon"></div>
+          <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg></div>
         <div>
           <article>
             <header></header>
             <p>Adipisci non reprehenderit, unde tempore, sed veniam inventore officia minima ducimus, quia provident aliquam. Facilis dolorum amet repellat a magni voluptatibus ratione sit dolor delectus, assumenda nesciunt, nostrum nihil! Harum.</p>
           </article>
-          <img src="images/star-check.svg" alt="favourite-icon"><img src="imgaes/eye-check.svg" alt="bookmark-icon"><img src="images/source-fork.svg" alt="share-icon"></div>
+          <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg></div>
         <div>
           <article>
             <header></header>
             <p>Obcaecati enim aspernatur sed voluptas molestias eum, deserunt nihil laboriosam error? Repellat modi deserunt sapiente aspernatur at ut itaque, dolore, perspiciatis expedita, numquam optio eveniet quasi cum id deleniti debitis!</p>
           </article>
-          <img src="images/star-check.svg" alt="favourite-icon"><img src="imgaes/eye-check.svg" alt="bookmark-icon"><img src="images/source-fork.svg" alt="share-icon"></div>
+          <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg></div>
         <div>
           <article>
             <header></header>
             <p>Voluptate hic vel esse? Repellendus recusandae ab laborum! Quae aut sunt aliquam voluptas. Maiores dolor amet ducimus vitae explicabo voluptatum voluptas, perspiciatis necessitatibus modi, ipsam laudantium ratione consectetur temporibus ut.</p>
           </article>
-          <img src="images/star-check.svg" alt="favourite-icon"><img src="imgaes/eye-check.svg" alt="bookmark-icon"><img src="images/source-fork.svg" alt="share-icon"></div></div>
+         <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg></div></div>
         <div class="announcement container"><header>Announcements</header>
           <div>
             <a href="#">
