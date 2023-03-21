@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="site-layout">
-      <div class="sidebar alt-clr">
+      <nav class="sidebar alt-clr">
         <div class="logo"><a href="#">Dashboard</a></div>
         <div class="button-container">
           <div class="page-button alt-clr"><a href="#"><svg data-src="images/home.svg" class="alt-clr"></svg> Home</a></div>
@@ -31,7 +31,7 @@
           <div class="page-button alt-clr"><a href="#"><svg data-src="images/support-icon.svg" class="alt-clr"></svg>Support</a></div>
           <div class="page-button alt-clr"><a href="#"><svg data-src="images/security-icon.svg" class="alt-clr"></svg>Privacy</a></div>
         </div>
-      </div>
+      </nav>
       <div class="header">
         <div class="nav">
           <div id="search-container">
@@ -40,11 +40,12 @@
           </div>
           <div id="profile-container">
             <a href="#"><svg data-src="images/notifications-icon.svg"></svg></a>
-            <a href="#"><img src="images/profilepic1.jpg" alt="profile-picture" />Gabriel Chang</a>
+            <a href="#"><img src="images/profilepic1.jpg" alt="profile-picture" /></a>
+            <a href="#">Gabriel Chang</a>
           </div>
         </div>
         <div class="user-bar">
-          <div><img src="images/profilepic1.jpg" alt="profile-picture"><p>Hi there,</p><h1>Gabriel Chang (@gabriel)</h1></div>
+          <div><img src="images/profilepic1.jpg" alt="profile-picture" class="main-pic"><p>Hi there,</p><h1>Gabriel Chang (@gabriel)</h1></div>
           <div class="container">
             <div class="alt-clr user-button"><a href="#">New</a></div>
             <div class="alt-clr user-button"><a href="#">Upload</a></div>
@@ -52,65 +53,73 @@
           </div>
         </div>
       </div>
-      <div class="content gray-clr">
-        <div class="project container"><div>
-          <header>Your Projects</header>
-          <article>
-            <header></header>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error eos aliquam provident maxime cupiditate minus totam similique itaque quidem in tempora qui harum quo, dolorum veritatis? Atque eum consequuntur reprehenderit.</p>
-          </article>
-          <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg></div>
-        <div>
-          <article>
-            <header></header>
-            <p>Amet repellat earum non eaque, maxime veritatis magnam aspernatur perspiciatis suscipit ratione ex! Laborum cumque inventore tempore porro. Placeat, asperiores eaque vero esse deserunt facere distinctio dolor reprehenderit amet consequuntur.</p>
-          </article>
-          <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg></div>
-        <div>
-          <article>
-            <header></header>
-            <p>Tempora, dolorum dignissimos? Quasi facilis a quis porro voluptas optio suscipit explicabo corporis, eius labore earum magnam quibusdam asperiores dolore soluta maxime sapiente corrupti mollitia. Laborum, temporibus cum. Excepturi, optio!</p>
-          </article>
-          <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg></div>
-        <div>
-          <article>
-            <header></header>
-            <p>Adipisci non reprehenderit, unde tempore, sed veniam inventore officia minima ducimus, quia provident aliquam. Facilis dolorum amet repellat a magni voluptatibus ratione sit dolor delectus, assumenda nesciunt, nostrum nihil! Harum.</p>
-          </article>
-          <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg></div>
-        <div>
-          <article>
-            <header></header>
-            <p>Obcaecati enim aspernatur sed voluptas molestias eum, deserunt nihil laboriosam error? Repellat modi deserunt sapiente aspernatur at ut itaque, dolore, perspiciatis expedita, numquam optio eveniet quasi cum id deleniti debitis!</p>
-          </article>
-          <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg></div>
-        <div>
-          <article>
-            <header></header>
-            <p>Voluptate hic vel esse? Repellendus recusandae ab laborum! Quae aut sunt aliquam voluptas. Maiores dolor amet ducimus vitae explicabo voluptatum voluptas, perspiciatis necessitatibus modi, ipsam laudantium ratione consectetur temporibus ut.</p>
-          </article>
-         <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg></div></div>
-        <div class="announcement container"><header>Announcements</header>
-          <div>
-            <a href="#">
-              <header>Site Maintenance</header>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum illum autem, culpa, excepturi inventore fuga beatae tempore ab maxime impedit distinctio harum facere voluptatum quasi quidem obcaecati odit sequi ex.</p>
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <header>Community Share Day</header>
-              <p>Incidunt atque eum explicabo aliquid inventore nostrum tempora, illum fuga adipisci deleniti dolor sapiente itaque natus. Hic dolorum deleniti, quo dicta doloremque, voluptates commodi magni placeat voluptate, dolore quas accusantium!</p>
-            </a>
-          </div>
-          <div>
-            <a href="#">
-              <header>Update Privacy Policy</header>
-              <p>Est at deserunt eaque provident similique perspiciatis doloribus quam eius nesciunt? Esse placeat ea, odio earum excepturi, consectetur expedita atque voluptatibus ipsa corporis quia eos eveniet tempore eum dolor molestias.</p>
-            </a>
+      <div class="content">
+        <div class="project-container">
+          <header class="content-header">Your Projects</header>
+          <div class="card-grid">
+            <div class="card">
+              <article>
+                <header>Awesome Project</header>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error eos aliquam provident maxime cupiditate minus totam similique itaque quidem in tempora qui harum quo, dolorum veritatis? Atque eum consequuntur reprehenderit.</p>
+              </article>
+              <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg>
+            </div>
+            <div class="card">
+              <article>
+                <header>My Cool Project</header>
+                <p>Amet repellat earum non eaque, maxime veritatis magnam aspernatur perspiciatis suscipit ratione ex! Laborum cumque inventore tempore porro. Placeat, asperiores eaque vero esse deserunt facere distinctio dolor reprehenderit amet consequuntur.</p>
+              </article>
+              <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg>
+            </div>
+            <div class="card">
+              <article>
+                <header></header>
+                <p>Tempora, dolorum dignissimos? Quasi facilis a quis porro voluptas optio suscipit explicabo corporis, eius labore earum magnam quibusdam asperiores dolore soluta maxime sapiente corrupti mollitia. Laborum, temporibus cum. Excepturi, optio!</p>
+              </article>
+              <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg>
+            </div>
+            <div class="card">
+              <article>
+                <header></header>
+                <p>Adipisci non reprehenderit, unde tempore, sed veniam inventore officia minima ducimus, quia provident aliquam. Facilis dolorum amet repellat a magni voluptatibus ratione sit dolor delectus, assumenda nesciunt, nostrum nihil! Harum.</p>
+              </article>
+              <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg>
+            </div>
+            <div class="card">
+              <article>
+                <header></header>
+                <p>Obcaecati enim aspernatur sed voluptas molestias eum, deserunt nihil laboriosam error? Repellat modi deserunt sapiente aspernatur at ut itaque, dolore, perspiciatis expedita, numquam optio eveniet quasi cum id deleniti debitis!</p>
+              </article>
+              <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg>
+            </div>
+            <div class="card">
+              <article>
+                <header></header>
+                <p>Voluptate hic vel esse? Repellendus recusandae ab laborum! Quae aut sunt aliquam voluptas. Maiores dolor amet ducimus vitae explicabo voluptatum voluptas, perspiciatis necessitatibus modi, ipsam laudantium ratione consectetur temporibus ut.</p>
+              </article>
+              <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg>
+            </div>
           </div>
         </div>
-        <div class="trending container">
+          <div class="announcement">
+            <header class="content-header">Announcements</header>
+            <div class="announcement-container">
+                <a href="#">
+                  <header>Site Maintenance</header>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum illum autem, culpa, excepturi inventore fuga beatae tempore ab maxime impedit distinctio harum facere voluptatum quasi quidem obcaecati odit sequi ex.</p>
+                </a>
+                <a href="#">
+                  <header>Community Share Day</header>
+                  <p>Incidunt atque eum explicabo aliquid inventore nostrum tempora, illum fuga adipisci deleniti dolor sapiente itaque natus. Hic dolorum deleniti, quo dicta doloremque, voluptates commodi magni placeat voluptate, dolore quas accusantium!</p>
+                </a>
+                <a href="#">
+                  <header>Update Privacy Policy</header>
+                  <p>Est at deserunt eaque provident similique perspiciatis doloribus quam eius nesciunt? Esse placeat ea, odio earum excepturi, consectetur expedita atque voluptatibus ipsa corporis quia eos eveniet tempore eum dolor molestias.</p>
+                </a>
+            </div>
+        </div>
+        <div class="trending">
+          <header class="content-header">Trending</header>
           <div class="profiles">
             <img src="images/profilepic2.jpg" alt="tegan">
             <div>
