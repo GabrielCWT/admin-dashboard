@@ -1,3 +1,91 @@
 :root {
   font-family: "Roboto", sans-serif;
+  --clr-primary-400: rgb(156, 156, 156);
+  --clr-primary-500: rgb(143, 143, 143);
+  --clr-primary-600: rgb(0, 0, 0);
+
+  --clr-alt-100: ;
+  --clr-alt-700: ;
+
+  --clr-dark: ;
+
+  --fw-semi-bold: 500;
+  --fw-bold: 600;
+
+  --fs-200: 0.4rem;
+  --fs-300: 0.6rem;
+  --fs-400: 0.75rem;
+  --fs-500: 1rem;
+  --fs-600: 1.2rem;
+  --fs-700: 1.3rem;
+  --fs-800: 2rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img.alt-clr {
+  display: inline;
+}
+
+.site-layout {
+  display: grid;
+  grid-template-rows: 20% 80%;
+  grid-template-columns: 20% 70%;
+}
+
+.content,
+.sidebar {
+  padding: 1rem 1.2rem;
+}
+
+.sidebar {
+  grid-row: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.logo {
+  font-size: var(--fs-800);
+  font-weight: var(--fw-semi-bold);
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.page-button {
+  font-size: var(--fs-700);
+}
+
+.page-button > a {
+  display: grid;
+  grid-template-columns: 1.5rem auto;
+  gap: 1.2rem;
+  align-items: center;
+  font-weight: var(--fw-bold);
+  color: black;
+}
+
+.header {
+  padding: 1rem 2.25rem;
+}
+
+img {
+  display: none;
 }
