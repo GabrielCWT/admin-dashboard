@@ -12,6 +12,7 @@
 
   --box-shadow: 2px 4px 4px 2px rgba(109, 119, 116, 0.2);
 
+  --fw-normal: 400;
   --fw-semi-bold: 500;
   --fw-bold: 600;
 
@@ -86,8 +87,20 @@ img.main-pic {
   flex-direction: column;
 }
 
-span {
+.align-center {
+  align-items: center;
+}
+
+.justify-spacebtwn {
+  justify-content: space-between;
+}
+
+.semi-bold {
   font-weight: var(--fw-semi-bold);
+}
+
+.bold {
+  font-weight: var(--fw-bold);
 }
 
 .content,
@@ -97,20 +110,11 @@ span {
 
 .sidebar {
   grid-row: 1 / -1;
-  display: flex;
-  flex-direction: column;
   gap: 4rem;
 }
 
 .logo {
   font-size: var(--fs-800);
-  font-weight: var(--fw-semi-bold);
-}
-
-.button-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
 }
 
 .page-button {
@@ -121,29 +125,22 @@ span {
   display: grid;
   grid-template-columns: 1.5rem auto;
   gap: 1.2rem;
-  align-items: center;
-  font-weight: var(--fw-bold);
 }
 
 .header {
   padding: 1rem 2.25rem;
   display: grid;
   grid-template-rows: 1fr 5fr;
-  font-weight: var(--fw-semi-bold);
 }
 
-.nav {
-  display: flex;
-  align-items: center;
+.upper-header {
   justify-content: space-between;
   gap: 6rem;
 }
 
 #search-container {
-  display: flex;
   gap: 1.2rem;
   flex: 1 1 180px;
-  align-items: center;
 }
 
 #search {
@@ -152,27 +149,14 @@ span {
   width: min(600px, 100%);
 }
 
-#profile-container {
-  display: flex;
-  gap: 1.2rem;
-  align-items: center;
-}
-
 .user-bar {
-  display: flex;
+  gap: 0;
   justify-content: space-between;
-  align-items: center;
 }
 
 #greeting {
   letter-spacing: 1px;
   gap: 0.25rem;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  gap: 1.5rem;
 }
 
 .user-button {
@@ -184,7 +168,6 @@ span {
 
 h1 {
   font-size: var(--fs-700);
-  font-weight: var(--fw-bold);
 }
 
 .content {
@@ -197,6 +180,7 @@ h1 {
 
 .content-header {
   padding-bottom: 1rem;
+  font-size: var(--fs-600);
 }
 
 .project-container {
@@ -211,8 +195,6 @@ h1 {
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
   background-color: var(--clr-light);
   padding: 1.5rem 2rem;
   border-radius: 10px;
@@ -226,18 +208,10 @@ h1 {
 
 .icon-container {
   align-self: end;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.announcement {
-  display: flex;
-  flex-direction: column;
 }
 
 .announcement-container {
-  display: flex;
-  flex-direction: column;
+  gap: 0;
   background-color: var(--clr-light);
   border-radius: 10px;
   padding: 0 2rem;
@@ -276,11 +250,13 @@ p {
 }
 
 .profile {
-  display: flex;
-  gap: 1.5rem;
+  align-items: center;
 }
 
 .profile > div {
-  display: flex;
-  flex-direction: column;
+  gap: 0.25rem;
+}
+
+span.profile-desc {
+  color: var(--clr-primary-500);
 }
