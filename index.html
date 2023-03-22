@@ -45,7 +45,9 @@
           </div>
         </div>
         <div class="user-bar">
-          <div><img src="images/profilepic1.jpg" alt="profile-picture" class="main-pic"><p>Hi there,</p><h1>Gabriel Chang (@gabriel)</h1></div>
+          <div class="flex"><img src="images/profilepic1.jpg" alt="profile-picture" class="main-pic"><div class="flex flex-col" id="greeting">
+            <p>Hi there,</p><h1>Gabriel Chang <span>(@</span>gabriel<span>)</span></h1>
+          </div></div>
           <div class="container">
             <div class="alt-clr user-button"><a href="#">New</a></div>
             <div class="alt-clr user-button"><a href="#">Upload</a></div>
@@ -62,42 +64,54 @@
                 <header>Awesome Project</header>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error eos aliquam provident maxime cupiditate minus totam similique itaque quidem in tempora qui harum quo, dolorum veritatis? Atque eum consequuntur reprehenderit.</p>
               </article>
-              <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg>
+              <div class="icon-container">
+                <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg>
+              </div>
             </div>
             <div class="card">
               <article>
                 <header>My Cool Project</header>
                 <p>Amet repellat earum non eaque, maxime veritatis magnam aspernatur perspiciatis suscipit ratione ex! Laborum cumque inventore tempore porro. Placeat, asperiores eaque vero esse deserunt facere distinctio dolor reprehenderit amet consequuntur.</p>
               </article>
-              <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg>
+              <div class="icon-container">
+                <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg>
+              </div>
             </div>
             <div class="card">
               <article>
                 <header></header>
                 <p>Tempora, dolorum dignissimos? Quasi facilis a quis porro voluptas optio suscipit explicabo corporis, eius labore earum magnam quibusdam asperiores dolore soluta maxime sapiente corrupti mollitia. Laborum, temporibus cum. Excepturi, optio!</p>
               </article>
-              <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg>
+              <div class="icon-container">
+                <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg>
+              </div>
             </div>
             <div class="card">
               <article>
                 <header></header>
                 <p>Adipisci non reprehenderit, unde tempore, sed veniam inventore officia minima ducimus, quia provident aliquam. Facilis dolorum amet repellat a magni voluptatibus ratione sit dolor delectus, assumenda nesciunt, nostrum nihil! Harum.</p>
               </article>
-              <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg>
+              <div class="icon-container">
+                <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg>
+              </div>
             </div>
             <div class="card">
               <article>
                 <header></header>
                 <p>Obcaecati enim aspernatur sed voluptas molestias eum, deserunt nihil laboriosam error? Repellat modi deserunt sapiente aspernatur at ut itaque, dolore, perspiciatis expedita, numquam optio eveniet quasi cum id deleniti debitis!</p>
               </article>
-              <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg>
+              <div class="icon-container">
+                <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg>
+              </div>
             </div>
             <div class="card">
               <article>
                 <header></header>
                 <p>Voluptate hic vel esse? Repellendus recusandae ab laborum! Quae aut sunt aliquam voluptas. Maiores dolor amet ducimus vitae explicabo voluptatum voluptas, perspiciatis necessitatibus modi, ipsam laudantium ratione consectetur temporibus ut.</p>
               </article>
-              <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg>
+              <div class="icon-container">
+                <svg data-src="images/favorite-icon.svg"></svg><svg data-src="images/bookmark-icon.svg"></svg><svg data-src="images/share-icon.svg"></svg>
+              </div>
             </div>
           </div>
         </div>
@@ -120,32 +134,34 @@
         </div>
         <div class="trending">
           <header class="content-header">Trending</header>
-          <div class="profiles">
-            <img src="images/profilepic2.jpg" alt="tegan">
-            <div>
-              <span class="profile-name">@tegan</span>
-              <span class="profile-desc">World Peace Builder</span>
+          <div class="profile-container">
+            <div class="profile">
+              <img src="images/profilepic2.jpg" alt="tegan">
+              <div>
+                <span class="profile-name">@tegan</span>
+                <span class="profile-desc">World Peace Builder</span>
+              </div>
             </div>
-          </div>
-          <div class="profiles">
-            <img src="images/profilepic1.jpg" alt="gabriel">
-            <div>
-              <span class="profile-name">@gabriel</span>
-              <span class="profile-desc">Super Cool Project</span>
+            <div class="profile">
+              <img src="images/profilepic1.jpg" alt="gabriel">
+              <div>
+                <span class="profile-name">@gabriel</span>
+                <span class="profile-desc">Super Cool Project</span>
+              </div>
             </div>
-          </div>
-          <div class="profiles">
-            <img src="images/profilepic3.jpg" alt="kendall">
-            <div>
-              <span class="profile-name">@kendall</span>
-              <span class="profile-desc">Life Changing App</span>
+            <div class="profile">
+              <img src="images/profilepic3.jpg" alt="kendall">
+              <div>
+                <span class="profile-name">@kendall</span>
+                <span class="profile-desc">Life Changing App</span>
+              </div>
             </div>
-          </div>
-          <div class="profiles">
-            <img src="images/profilepic4.jpg" alt="alex">
-            <div>
-              <span class="profile-name">@alex</span>
-              <span class="profile-desc">No Traffic Maker</span>
+            <div class="profile">
+              <img src="images/profilepic4.jpg" alt="alex">
+              <div>
+                <span class="profile-name">@alex</span>
+                <span class="profile-desc">No Traffic Maker</span>
+              </div>
             </div>
           </div>
         </div>
