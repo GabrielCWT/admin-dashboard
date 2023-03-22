@@ -131,10 +131,11 @@ img.main-pic {
   padding: 1rem 2.25rem;
   display: grid;
   grid-template-rows: 1fr 5fr;
+  box-shadow: var(--box-shadow);
+  z-index: 2;
 }
 
 .upper-header {
-  justify-content: space-between;
   gap: 6rem;
 }
 
@@ -151,7 +152,6 @@ img.main-pic {
 
 .user-bar {
   gap: 0;
-  justify-content: space-between;
 }
 
 #greeting {
@@ -235,7 +235,6 @@ h1 {
 }
 
 p {
-  color: var(--clr-primary-500);
   margin-top: 0.5rem;
 }
 
@@ -249,14 +248,11 @@ p {
   box-shadow: var(--box-shadow);
 }
 
-.profile {
-  align-items: center;
-}
-
 .profile > div {
   gap: 0.25rem;
 }
 
-span.profile-desc {
+span.profile-desc,
+p {
   color: var(--clr-primary-500);
 }
