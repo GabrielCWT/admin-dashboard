@@ -58,6 +58,11 @@ img {
   display: inline;
 }
 
+.hovering {
+  transform: scale(1.4);
+  transition: transform 0.2s;
+}
+
 img.main-pic {
   height: 90px;
   width: 90px;
@@ -104,7 +109,7 @@ img.main-pic {
 }
 
 .content,
-.sidebar {
+.page-button {
   padding: 1rem 1.2rem;
 }
 
@@ -115,6 +120,10 @@ img.main-pic {
 
 .logo {
   font-size: var(--fs-800);
+}
+
+.button-container {
+  gap: 0;
 }
 
 .page-button {
@@ -231,6 +240,7 @@ h1 {
 
 .announcement-container > a {
   padding: 1.5rem 0;
+  color: var(--clr-primary-800);
 }
 
 .announcement-container > a:not(:last-child) {
