@@ -1,17 +1,16 @@
 :root {
+  color-scheme: light dark;
   font-family: "Roboto", sans-serif;
+  --clr-primary-100: rgb(255, 255, 255);
+  --clr-primary-200: rgb(233, 232, 232);
   --clr-primary-400: rgb(207, 219, 215);
   --clr-primary-500: rgb(107, 107, 107);
   --clr-primary-800: rgb(0, 0, 0);
-
   --clr-alt-100: rgb(28, 207, 148);
   --clr-alt-700: rgb(56, 112, 196);
+  --clr-icon: rgb(0, 0, 0);
 
-  --clr-light: rgb(255, 255, 255);
-  --clr-dark: ;
-
-  --box-shadow: 2px 4px 4px 2px rgba(109, 119, 116, 0.2);
-
+  --box-shadow: 4px 4px 4px 2px rgba(109, 119, 116, 0.2);
   --fw-normal: 400;
   --fw-semi-bold: 500;
   --fw-bold: 600;
@@ -25,10 +24,26 @@
   --fs-800: 2rem;
 }
 
+html.dark {
+  --clr-primary-100: #202230;
+  --clr-primary-200: #e2e2e2;
+  --clr-primary-400: #1c1d24;
+  --clr-primary-500: #767daa;
+  --clr-primary-800: #abb0cc;
+  --clr-alt-100: #796832;
+  --clr-alt-700: #494bc6;
+  --clr-icon: #aab5b9;
+  --box-shadow: 10px 4px 4px 2px #1a1b27;
+}
+
 html,
 body {
   height: 100%;
   width: 100%;
+}
+
+body * {
+  color: var(--clr-primary-800);
 }
 
 *,
@@ -48,6 +63,7 @@ a {
 
 svg {
   height: 1.5rem;
+  fill: var(--clr-icon);
 }
 
 path {
@@ -81,10 +97,10 @@ img.main-pic {
 
 .alt-clr {
   background-color: var(--clr-alt-100);
-  fill: var(--clr-light);
+  fill: var(--clr-primary-200);
 }
 .alt-clr * {
-  color: var(--clr-light);
+  color: var(--clr-primary-200);
 }
 
 .flex {
@@ -141,6 +157,7 @@ img.main-pic {
 }
 
 .header {
+  background-color: var(--clr-primary-100);
   padding: 1rem 2.25rem;
   display: grid;
   grid-template-rows: 1fr 5fr;
@@ -219,7 +236,7 @@ h1 {
 }
 
 .card {
-  background-color: var(--clr-light);
+  background-color: var(--clr-primary-100);
   padding: 1.5rem 2rem;
   border-radius: 10px;
   border-left: 10px solid var(--clr-alt-700);
@@ -236,7 +253,7 @@ h1 {
 
 .announcement-container {
   gap: 0;
-  background-color: var(--clr-light);
+  background-color: var(--clr-primary-100);
   border-radius: 10px;
   padding: 0 2rem;
   box-shadow: var(--box-shadow);
@@ -244,7 +261,6 @@ h1 {
 
 .announcement-container > a {
   padding: 1.5rem 0;
-  color: var(--clr-primary-800);
 }
 
 .announcement-container > a:not(:last-child) {
@@ -267,7 +283,7 @@ p {
   display: grid;
   grid-auto-rows: 60px;
   gap: 1.5rem;
-  background-color: var(--clr-light);
+  background-color: var(--clr-primary-100);
   border-radius: 10px;
   padding: 1.5rem 1.5rem;
   box-shadow: var(--box-shadow);
