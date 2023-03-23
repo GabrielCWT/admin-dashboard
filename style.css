@@ -50,6 +50,10 @@ svg {
   height: 1.5rem;
 }
 
+path {
+  pointer-events: none;
+}
+
 img {
   height: 60px;
   width: 60px;
