@@ -1,6 +1,6 @@
 :root {
   color-scheme: light dark;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   --clr-primary-100: rgb(255, 255, 255);
   --clr-primary-200: rgb(233, 232, 232);
   --clr-primary-400: rgb(207, 219, 215);
@@ -139,6 +139,7 @@ img.main-pic {
 }
 
 .logo {
+  padding: 1rem;
   font-size: var(--fs-800);
 }
 
